@@ -1,0 +1,298 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* navbar */
+#my-nav{
+   
+}
+#nav-logo{
+    color: orange;
+    font-weight: 700;
+}
+#logo-guide{
+    font-size: 10px;
+    color: black;
+}
+#nav-ul{
+    margin-left: 55%;
+}
+/* Landing  */
+
+#landing-1{
+    position: relative;
+}
+#landing-content{
+    position: absolute;
+    top: 30%;
+    left: 25%;
+}
+#landing-h{
+    color: white;
+    font-size: 70px;
+}
+#landing-p{
+    color: white;
+    font-size: 70px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#landing-button{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+   
+}
+
+
+/* HONEYMOON */
+#hm-head{
+    text-align: center;
+    margin: 5%;
+}
+#hm{
+    border: solid 1px grey;
+    text-align: center;
+    padding: 20px;
+}
+#hm-img{
+    margin-top: 5%;
+    padding: 2px;
+    height: 200px;
+}
+#hm-p1{
+    color: red;
+}
+
+
+/* more packages */
+#morepackage{
+    text-align: center;
+    margin: 5%;
+    
+}
+
+/* kerala */
+#kerala{
+    background-color:azure ;
+    width: 100%;
+}
+#kerala-h{
+    text-align: center;
+    margin: 3%;
+}
+#kerala-img{
+    width: 100%;
+    position:relative;
+}
+#keralaimg{
+    width: 100%;
+    height: 70%;
+}
+#keralacarouselhead{
+    font-size: 40px;
+    font-weight: 800;
+    color: blue;
+}
+
+/* vdeo and image */
+
+#colimg{
+   text-align: center;
+   margin-top: 4%;
+}
+
+#col-i{
+    margin: 4%;
+}
+
+/* north */
+#north-indian{
+    margin-top: 4%;
+    flex-wrap: nowrap;
+}
+#northflex{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+}
+#nh{
+    text-align: center;
+    margin: 4%;
+}
+
+#cardimgnorth{
+    text-align: center;
+    height: 100%;
+    border-radius: 10%;
+    padding: 10px;
+   justify-content: space-around;
+}
+
+#fcontent{
+    text-align: center;
+    margin-top: 4%;
+}
+#fp{
+    color: red;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#fimg{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+#card1{
+    width: 200px;
+    height: 300px;
+    padding: 10px;
+}
+#cardimg{
+    border-radius: 50%;
+    margin: 20px;margin-left: 50px;
+    width: 170px;
+    height: 170px;
+}
+#fp1{
+    text-align: center;
+}
+#flink{
+    text-align: center;
+    text-decoration: none;
+}
+
+#cust{
+    margin-top: 4%;
+}
+#love{
+    text-align: center;
+    margin-left: 50%;
+    font-size: 30px;
+}
+
+#custh{
+    text-align: center;
+    margin: 4%;
+    color: blue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+#rev{
+    text-align: center;
+}
+
+
+/* footer */
+#foot{
+    background-color:#002379 ;
+    padding: 10px;
+}
+#footer1{
+    margin-left: 4%;
+    margin-top: 2%;
+}
+#footer1h{
+    color: orange;
+}
+#footer1li{
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+    margin-left: -8%;
+}
+#footer2{
+    margin-top: 2%;
+    margin-left: -5%;
+}
+#social{
+    text-align: center;
+    color: orange;
+}
+#f2icon{
+    margin-left: 25%;
+}
+#f2i{
+    color: white;
+    font-size: 30px;
+    padding: 10px;
+}
+#f3img{
+    padding: 10px;
+    margin-left: 25%;
+}
+#f3h{
+    color: white;
+    text-align: center;
+}
+
+
+/* media */
+
+@media(max-width:680px){
+    #footer1{
+        margin-left: 35%;
+        margin-top: 2%;
+    }
+    #footer2{
+        margin-top: 2%;
+        margin-left: 1%;
+    }
+    #fimg{
+        
+        flex-wrap:wrap;
+    }
+    #northflex{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    #nh{
+        margin-top:25%;
+    }
+    #landing-img{
+        width: 100%;
+    }
+    #landing-h{
+        color: white;
+        font-size: 30px;
+    }
+    #landing-p{
+        color: white;
+        font-size: 20px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    #landing-button{
+        position: absolute;
+        top: 60%;
+        left: 50%;
+       
+    }
+
+
+}
+
+@media(max-width:400px){
+    #landing-h{
+        color: white;
+        font-size: 30px;
+        top: -20%;
+    }
+    #landing-p{
+        color: white;
+        font-size: 20px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    #landing-button{
+        position: absolute;
+        top: 25%;
+        left: 60%;
+       
+    }
+    #landing-content{
+        position: absolute;
+        top: 10%;
+        left: 25%;
+    }
+}
