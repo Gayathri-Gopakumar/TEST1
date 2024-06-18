@@ -12,10 +12,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div class="container">
+    <div class="container-fluid">
         <!-- navbar -->
-         <nav>
-            <nav id="my-nav" class="navbar navbar-expand-lg navbar-light ">
+         
+            <nav id="my-nav" class="navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid">
                   <a id="nav-logo" class="navbar-brand" href="#">TRAVEL <span id="logo-guide">GUIDE</span></a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,12 +52,12 @@
                   </div>
                 </div>
               </nav>
-         </nav>
+         
+              
+         
         <!-- landing image -->
          <div id="landing">
-            <div id="landing-1">
-                <img id="landing-img" src="https://www.psychologs.com/wp-content/uploads/2023/08/Hodophile-A-Person-who-Loves-to-Travel.jpg" alt="">
-            </div>
+            
             <div id="landing-content">
                 <h1 id="landing-h">Travel</h1>
                 <p id="landing-p">far enough,</p>
@@ -65,9 +65,52 @@
                 <p id="landing-p">yourself</p>
             </div>
             <div id="landing-button">
-                <button type="button" class="btn btn-success">ENQUIRY</button>
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">ENQUIRY</button>
             </div>
          </div>
+         
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">PLEASE SHARE YOUR DETAILS</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <label for="inputName" class="form-label">Name</label>
+        <input type="text" class="form-control" id="inputName">
+        
+        <label for="inputEmail4" class="form-label">Email</label>
+        <input type="email" class="form-control" id="inputEmail4">
+      
+        <label for="inputPhone" class="form-label">Phone Number</label>
+        <input type="text" class="form-control" id="inputPhone">
+        
+        <label class="form-label" for="autoSizingSelect">Preference</label>
+        <select class="form-select" id="autoSizingSelect">
+          <option selected>Choose...</option>
+          <option value="1">HONEYMOON PACKAGE</option>
+          <option value="2">KERALA</option>
+          <option value="3">NORTH INDIAN</option>
+        </select>
+        
+        <label for="inputMember" class="form-label">Number of members</label>
+        <input type="text" class="form-control" id="inputMember">
+        
+        <label for="inputMes" class="form-label">Message</label>
+        <br>
+        <textarea rows="4" cols="50" name="comment" form="usrform">
+          Enter text here...</textarea>
+      </div>
+      <div class="modal-footer text-center">
+        
+        <button type="button" class="btn btn-primary ">SUBMIT</button>
+      </div>
+    </div>
+  </div>
+</div>
          <!-- honeymoon packages -->
           <div id="hm-head">
             <h2>HONEYMOON PACKAGES</h2>
@@ -78,28 +121,28 @@
                 <h5 id="hm-h">Kerala Honeymoon Packages</h5>
                 <p id="hm-p1">(04Nights/05Days)</p>
                 <p id="hm-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, accusantium fugit facere amet earum blanditiis ipsa tempore nisi itaque voluptas eaque adipisci quas veritatis a provident maiores eius vero similique.</p>
-                <button type="button" class="btn btn-primary">BOOK NOW</button>
+                <button id="hmbutton" type="button" class="btn btn-primary">BOOK NOW</button>
             </div>
             <div id="hm" class="col-md-3">
                 <img id="hm-img" class="img-fluid" src="https://www.emperortraveline.com/wp-content/uploads/2021/05/Honeymoon-tour.jpg" alt="">
                 <h5 id="hm-h">Goa Honeymoon Packages</h5>
                 <p id="hm-p1">(05Nights/06Days)</p>
                 <p id="hm-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, accusantium fugit facere amet earum blanditiis ipsa tempore nisi itaque voluptas eaque adipisci quas veritatis a provident maiores eius vero similique.</p>
-                <button type="button" class="btn btn-primary">BOOK NOW</button>
+                <button id="hmbutton" type="button" class="btn btn-primary">BOOK NOW</button>
             </div>
             <div id="hm" class="col-md-3">
                 <img id="hm-img" class="img-fluid" src="https://static.toiimg.com/thumb/msid-55811482,width-748,height-499,resizemode=4,imgsize-98244/.jpg" alt="">
                 <h5 id="hm-h">Maldive Honeymoon Packages</h5>
                 <p id="hm-p1">(07Nights/08Days)</p>
                 <p id="hm-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, accusantium fugit facere amet earum blanditiis ipsa tempore nisi itaque voluptas eaque adipisci quas veritatis a provident maiores eius vero similique.</p>
-                <button type="button" class="btn btn-primary">BOOK NOW</button>
+                <button id="hmbutton" type="button" class="btn btn-primary">BOOK NOW</button>
             </div>
             <div id="hm" class="col-md-3">
                 <img id="hm-img" class="img-fluid" src="https://static.wanderon.in/wp-content/uploads/2024/02/honeymoon-tour-packages.jpg" alt="">
                 <h5 id="hm-h">Manali Honeymoon Packages</h5>
                 <p id="hm-p1">(04Nights/05Days)</p>
                 <p id="hm-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, accusantium fugit facere amet earum blanditiis ipsa tempore nisi itaque voluptas eaque adipisci quas veritatis a provident maiores eius vero similique.</p>
-                <button type="button" class="btn btn-primary">BOOK NOW</button>
+                <button id="hmbutton" type="button" class="btn btn-primary">BOOK NOW</button>
             </div>
           </div>
           <!-- more packages -->
@@ -151,7 +194,7 @@
 
             <!-- vdeo and img  -->
              <div class="row mt-5">
-                <div class="col-md-6">
+                <div  class="col-md-6">
                     <iframe width="600" height="480" src="https://www.youtube.com/embed/R83BlU5nnbs" title="Signature Video  | Kerala Tourism | Experience God’s Own Country" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
                 <div id="colimg" class="col-md-6">
@@ -179,18 +222,38 @@
                 <div id="northflex" class="d-flex justify-content-evenly">
                     <div id="card1" class="card" style="width: 18rem;">
                         <img id="cardimgnorth" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCrOYgz388h3yYCKg5vw6GTIdG4DDx_4gGkA&s" class="card-img-top" alt="...">
+                       <div id="card-inner">
+                        <h4>DELHI</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. dolor libero.</p>
+                        <p>RS 8000/- per person</p>
+                       </div>
                         
                       </div>
                       <div id="card1" class="card" style="width: 18rem;">
                         <img id="cardimgnorth" src="https://static.javatpoint.com/tourist-places/images/tourist-places-in-north-india3.png" class="card-img-top" alt="...">
+                        <div id="card-inner">
+                          <h4>MUMBAI</h4>
+                          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. dolor libero.</p>
+                          <p>RS 9000/- per person</p>
+                         </div>
                         
                       </div>
                       <div id="card1" class="card" style="width: 18rem;">
                         <img id="cardimgnorth" src="https://assets.traveltriangle.com/blog/wp-content/uploads/2016/07/shutterstock_115227475.jpg?tr=w-400" class="card-img-top" alt="...">
+                        <div id="card-inner">
+                          <h4>KASHMIR</h4>
+                          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. dolor libero.</p>
+                          <p>RS 12000/- per person</p>
+                         </div>
                         
                       </div>
                       <div id="card1" class="card" style="width: 18rem;">
                         <img id="cardimgnorth" src="https://www.fabhotels.com/blog/wp-content/uploads/2019/09/Jaipur1.jpg" class="card-img-top" alt="...">
+                        <div id="card-inner">
+                          <h4>RAJASTHAN</h4>
+                          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. dolor libero.</p>
+                          <p>RS 10000/- per person</p>
+                         </div>
                         
                       </div>
                 </div>

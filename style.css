@@ -4,20 +4,57 @@
     box-sizing: border-box;
 }
 /* navbar */
-#my-nav{
-   
-}
+
 #nav-logo{
     color: orange;
     font-weight: 700;
+    position: fixed;
+    top: 0;
+  
 }
 #logo-guide{
     font-size: 10px;
     color: black;
 }
 #nav-ul{
-    margin-left: 55%;
+    position: fixed;
+    top: 0;
+    left: 55%;
 }
+
+
+.navbar {
+    background-color: transparent !important; /* Important to override Bootstrap's default */
+    box-shadow: none; /* Optional: Remove the shadow */
+    background-image: url('https://www.psychologs.com/wp-content/uploads/2023/08/Hodophile-A-Person-who-Loves-to-Travel.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+ 
+  }
+  
+  .navbar-nav .nav-link {
+    
+    color: white !important; /* Example: Set text color to white */
+    
+  }
+  
+  .navbar-light .navbar-toggler-icon {
+    background-color: white; /* Example: Customize the hamburger icon color */
+  }
+  
+  /* Optional: Adjust spacing and other styles as needed */
+  .navbar-brand {
+    color: orange !important; /* Example: Set navbar brand text color to white */
+  }
+  
+  /* Ensure links are visible on light backgrounds */
+  .navbar-light .navbar-nav .nav-link {
+    color: rgba(255,255,255,.5) !important; /* Example: Set semi-transparent text color */
+  }
 /* Landing  */
 
 #landing-1{
@@ -55,6 +92,9 @@
     text-align: center;
     padding: 20px;
 }
+#hm:hover{
+    box-shadow: 2px 2px grey;
+}
 #hm-img{
     margin-top: 5%;
     padding: 2px;
@@ -62,6 +102,9 @@
 }
 #hm-p1{
     color: red;
+}
+#hmbutton:hover{
+    background-color: orangered;
 }
 
 
@@ -127,7 +170,35 @@
     border-radius: 10%;
     padding: 10px;
    justify-content: space-around;
+
 }
+#card1{
+    position: relative;
+    width: 20rem;
+    height: 30rem;
+    
+    border-radius: 20px;
+    background-position:  center;
+    overflow: hidden;
+}
+#card-inner{
+    position: absolute;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        z-index: 1;
+        opacity: 0;
+        padding: 2rem 1.3rem 2rem 2rem;
+        transition: all 0.4s ease 0s;
+}
+#card1:hover #card-inner {
+    background-color: #0D1282;
+    color: white;
+    opacity: 0.8;
+}
+
+
 
 #fcontent{
     text-align: center;
@@ -269,8 +340,8 @@
         left: 50%;
        
     }
-
-
+   
+    
 }
 
 @media(max-width:400px){
@@ -286,8 +357,8 @@
     }
     #landing-button{
         position: absolute;
-        top: 25%;
-        left: 60%;
+        top: 55%;
+        left: 35%;
        
     }
     #landing-content{
@@ -295,4 +366,5 @@
         top: 10%;
         left: 25%;
     }
+   
 }
